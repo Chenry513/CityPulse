@@ -16,7 +16,7 @@ jobs:
       - run: python -m pipelines.run --days 21
         env:
           DBT_SEND_ANONYMOUS_USAGE_STATS: 'false'
-      - run: pytest -q
+      - run: python -m pytest -q
       - run: node --check dist/app.js
       - run: node --test tests/live.test.cjs
       - run: docker build -f docker/Dockerfile -t citypulse:test .
@@ -24,3 +24,4 @@ jobs:
         with:
           name: evaluation
           path: data/models/metrics.json
+
