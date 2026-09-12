@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: stg_weather
+    columns:
+      - name: timestamp
+        data_tests: [not_null, unique]
+  - name: stg_transit
+    columns:
+      - name: departures
+        data_tests: [not_null]
+  - name: stg_events
+    columns:
+      - name: event_intensity
+        data_tests: [not_null]
+  - name: feature_neighbourhood_activity
+    columns:
+      - name: activity
+        data_tests: [not_null]
+      - name: neighbourhood
+        data_tests: [not_null]

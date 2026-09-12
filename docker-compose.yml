@@ -1,0 +1,29 @@
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python -m pipelines.run
+    volumes:
+      - citypulse-data:/app/data
+      - citypulse-dashboard:/app/dist
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - citypulse-data:/app/data:ro
+      - citypulse-dashboard:/app/dist:ro
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+volumes:
+  citypulse-data:
+  citypulse-dashboard:

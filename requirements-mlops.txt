@@ -1,0 +1,3 @@
+-r requirements.txt
+mlflow-skinny>=3,<4
+prefect>=3,<4

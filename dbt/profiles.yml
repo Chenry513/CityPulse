@@ -1,0 +1,7 @@
+citypulse:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: "{{ env_var('CITYPULSE_DB', 'data/citypulse.duckdb') }}"
+      threads: 2

@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+pytest-cache-files-*/
+.venv/
+*.pyc
+.env
+data/*.duckdb*
+data/raw/
+data/analytics/
+data/models/
+mlruns/
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+.sites-runtime/

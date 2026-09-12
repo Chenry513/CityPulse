@@ -1,0 +1,9 @@
+.git
+.sites-runtime
+__pycache__
+.pytest_cache
+data
+dbt/target
+dbt/logs
+.env
+mlruns

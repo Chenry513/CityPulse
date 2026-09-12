@@ -1,0 +1,64 @@
+name: Refresh live city data
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/collect-live.cjs
+      - scripts/collect-transit.py
+      - dist/live.js
+      - .github/workflows/live-data.yml
+permissions:
+  contents: write
+concurrency:
+  group: live-city-data
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh transit schedule if older than 24 hours
+        run: |
+          python - <<'PY'
+          import json, subprocess, sys
+          from pathlib import Path
+          from datetime import datetime, timezone
+          path = Path('dist/transit-schedule.json')
+          try:
+              data = json.loads(path.read_text())
+              age = (datetime.now(timezone.utc) - datetime.fromisoformat(data['fetched_at'])).total_seconds()
+          except (OSError, ValueError, KeyError):
+              age = float('inf')
+          if age > 86400:
+              subprocess.run([sys.executable, 'scripts/collect-transit.py'], check=True)
+          else:
+              print('The official GTFS download is less than 24 hours old.')
+          PY
+      - name: Fetch weather, municipal reports, and preserve hourly history
+        id: observations
+        if: success() || failure()
+        run: node scripts/collect-live.cjs
+      - name: Validate live data contracts
+        id: validation
+        if: success() || failure()
+        run: node --test tests/live.test.cjs
+      - name: Commit successful observations
+        if: always() && steps.observations.outcome == 'success' && steps.validation.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/live-snapshot.json dist/live-history.json dist/transit-schedule.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh live city observations'
+            git push
+          fi

@@ -1,0 +1,3223 @@
+{
+  "schema_version": 1,
+  "provenance": "synthetic",
+  "timestamp": "2026-09-12 01:00:00Z",
+  "generated_at": "2026-09-12T06:45:35.717482+00:00",
+  "city_change": 7,
+  "transit_index": 48,
+  "weather": {
+    "temperature": 19,
+    "precipitation": 0.0,
+    "wind": 13,
+    "label": "Dry"
+  },
+  "neighbourhoods": [
+    {
+      "name": "Arbutus Ridge",
+      "activity": 54,
+      "change": 15,
+      "anomaly_score": 0.0,
+      "transit": 45,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Arbutus Ridge activity is 15% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.3
+        },
+        {
+          "label": "Transit service",
+          "value": 4.4
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -2.1
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.2
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        21,
+        19,
+        19,
+        19,
+        20,
+        22,
+        27,
+        33,
+        40,
+        43,
+        43,
+        42,
+        41,
+        43,
+        44,
+        46,
+        51,
+        53,
+        51,
+        46,
+        39,
+        32,
+        27,
+        23
+      ],
+      "typical": 47.2,
+      "typical_range": [
+        44.1,
+        49.6
+      ],
+      "hourly": [
+        46,
+        42,
+        38,
+        33,
+        30,
+        17,
+        13,
+        19,
+        16,
+        19,
+        20,
+        27,
+        35,
+        43,
+        45,
+        43,
+        43,
+        43,
+        38,
+        47,
+        45,
+        48,
+        54,
+        54
+      ],
+      "hourly_reference": [
+        45,
+        43,
+        38,
+        33,
+        28,
+        16,
+        15,
+        18,
+        18,
+        17,
+        21,
+        27,
+        35,
+        43,
+        44,
+        43,
+        42,
+        42,
+        43,
+        43,
+        46,
+        49,
+        50,
+        47
+      ]
+    },
+    {
+      "name": "Downtown",
+      "activity": 100,
+      "change": 45,
+      "anomaly_score": 0.999,
+      "transit": 91,
+      "summary": "Elevated evening event activity",
+      "tags": [
+        "Events",
+        "Transit"
+      ],
+      "explanation": "Downtown activity is 45% above its training-period weekday/hour baseline. The largest model contributions are event intensity, transit service, previous activity. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Event intensity",
+          "value": 28.0
+        },
+        {
+          "label": "Transit service",
+          "value": 18.2
+        },
+        {
+          "label": "Previous activity",
+          "value": 11.7
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        37,
+        34,
+        32,
+        32,
+        33,
+        35,
+        39,
+        46,
+        53,
+        57,
+        56,
+        54,
+        55,
+        55,
+        58,
+        60,
+        63,
+        71,
+        71,
+        68,
+        62,
+        56,
+        52,
+        42
+      ],
+      "typical": 68.8,
+      "typical_range": [
+        63.9,
+        73.4
+      ],
+      "hourly": [
+        60,
+        51,
+        50,
+        44,
+        43,
+        30,
+        24,
+        31,
+        31,
+        32,
+        33,
+        43,
+        51,
+        58,
+        56,
+        54,
+        55,
+        54,
+        57,
+        58,
+        64,
+        62,
+        68,
+        100
+      ],
+      "hourly_reference": [
+        59,
+        57,
+        50,
+        48,
+        42,
+        31,
+        30,
+        31,
+        32,
+        31,
+        33,
+        41,
+        49,
+        58,
+        58,
+        57,
+        56,
+        56,
+        55,
+        58,
+        60,
+        62,
+        70,
+        69
+      ]
+    },
+    {
+      "name": "Dunbar-Southlands",
+      "activity": 51,
+      "change": 4,
+      "anomaly_score": 0.0,
+      "transit": 41,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Dunbar-Southlands activity is 4% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 4.6
+        },
+        {
+          "label": "Transit service",
+          "value": 3.2
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -1.0
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        24,
+        22,
+        21,
+        21,
+        22,
+        24,
+        28,
+        34,
+        42,
+        45,
+        45,
+        44,
+        44,
+        44,
+        47,
+        49,
+        52,
+        54,
+        52,
+        48,
+        42,
+        35,
+        30,
+        26
+      ],
+      "typical": 49.3,
+      "typical_range": [
+        45.9,
+        52.7
+      ],
+      "hourly": [
+        46,
+        39,
+        43,
+        34,
+        32,
+        18,
+        15,
+        17,
+        21,
+        17,
+        23,
+        26,
+        35,
+        47,
+        51,
+        47,
+        46,
+        48,
+        47,
+        44,
+        49,
+        47,
+        52,
+        51
+      ],
+      "hourly_reference": [
+        47,
+        45,
+        41,
+        36,
+        30,
+        17,
+        18,
+        18,
+        19,
+        20,
+        21,
+        28,
+        37,
+        45,
+        47,
+        46,
+        42,
+        45,
+        45,
+        46,
+        49,
+        51,
+        50,
+        49
+      ]
+    },
+    {
+      "name": "Fairview",
+      "activity": 71,
+      "change": 1,
+      "anomaly_score": 0.965,
+      "transit": 62,
+      "summary": "Outside the typical activity pattern",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Fairview activity is 1% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, event intensity. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 17.1
+        },
+        {
+          "label": "Transit service",
+          "value": 9.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 5.6
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.8
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        39,
+        36,
+        35,
+        35,
+        35,
+        37,
+        41,
+        48,
+        55,
+        58,
+        58,
+        56,
+        57,
+        58,
+        61,
+        62,
+        66,
+        72,
+        73,
+        72,
+        65,
+        57,
+        54,
+        44
+      ],
+      "typical": 71.0,
+      "typical_range": [
+        65.3,
+        76.9
+      ],
+      "hourly": [
+        63,
+        53,
+        54,
+        48,
+        47,
+        30,
+        24,
+        31,
+        31,
+        38,
+        36,
+        39,
+        57,
+        59,
+        63,
+        60,
+        58,
+        57,
+        60,
+        61,
+        63,
+        63,
+        79,
+        71
+      ],
+      "hourly_reference": [
+        61,
+        58,
+        53,
+        49,
+        43,
+        32,
+        32,
+        32,
+        33,
+        33,
+        36,
+        43,
+        51,
+        59,
+        61,
+        58,
+        59,
+        58,
+        59,
+        60,
+        62,
+        64,
+        72,
+        71
+      ]
+    },
+    {
+      "name": "Grandview-Woodland",
+      "activity": 96,
+      "change": 34,
+      "anomaly_score": 0.999,
+      "transit": 90,
+      "summary": "Elevated evening event activity",
+      "tags": [
+        "Events",
+        "Transit"
+      ],
+      "explanation": "Grandview-Woodland activity is 34% above its training-period weekday/hour baseline. The largest model contributions are event intensity, transit service, previous activity. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Event intensity",
+          "value": 19.1
+        },
+        {
+          "label": "Transit service",
+          "value": 17.8
+        },
+        {
+          "label": "Previous activity",
+          "value": 14.1
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.3
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        40,
+        37,
+        35,
+        35,
+        36,
+        38,
+        43,
+        49,
+        57,
+        59,
+        59,
+        57,
+        58,
+        59,
+        61,
+        63,
+        67,
+        75,
+        76,
+        73,
+        66,
+        59,
+        55,
+        45
+      ],
+      "typical": 71.9,
+      "typical_range": [
+        66.2,
+        76.5
+      ],
+      "hourly": [
+        63,
+        62,
+        56,
+        51,
+        49,
+        30,
+        30,
+        33,
+        32,
+        32,
+        35,
+        44,
+        52,
+        56,
+        60,
+        61,
+        61,
+        60,
+        58,
+        62,
+        64,
+        66,
+        73,
+        96
+      ],
+      "hourly_reference": [
+        63,
+        60,
+        55,
+        50,
+        45,
+        33,
+        32,
+        33,
+        33,
+        35,
+        38,
+        43,
+        52,
+        60,
+        62,
+        59,
+        57,
+        60,
+        61,
+        61,
+        64,
+        65,
+        74,
+        72
+      ]
+    },
+    {
+      "name": "Hastings-Sunrise",
+      "activity": 52,
+      "change": -2,
+      "anomaly_score": 0.0,
+      "transit": 34,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Hastings-Sunrise activity is 2% below its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 7.2
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 1.1
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.6
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.4
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        26,
+        25,
+        23,
+        24,
+        24,
+        26,
+        31,
+        38,
+        46,
+        48,
+        48,
+        46,
+        47,
+        47,
+        49,
+        51,
+        55,
+        56,
+        54,
+        51,
+        45,
+        37,
+        32,
+        28
+      ],
+      "typical": 52.4,
+      "typical_range": [
+        49.7,
+        56.0
+      ],
+      "hourly": [
+        52,
+        41,
+        47,
+        38,
+        36,
+        17,
+        16,
+        21,
+        20,
+        25,
+        29,
+        32,
+        38,
+        48,
+        49,
+        48,
+        45,
+        46,
+        51,
+        51,
+        51,
+        53,
+        58,
+        52
+      ],
+      "hourly_reference": [
+        50,
+        47,
+        42,
+        39,
+        33,
+        22,
+        21,
+        21,
+        21,
+        22,
+        25,
+        32,
+        41,
+        48,
+        50,
+        48,
+        46,
+        47,
+        48,
+        49,
+        52,
+        53,
+        54,
+        52
+      ]
+    },
+    {
+      "name": "Kensington-Cedar Cottage",
+      "activity": 53,
+      "change": 1,
+      "anomaly_score": 0.0,
+      "transit": 40,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Kensington-Cedar Cottage activity is 1% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 6.1
+        },
+        {
+          "label": "Transit service",
+          "value": 2.8
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.2
+        },
+        {
+          "label": "Event intensity",
+          "value": -1.0
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        27,
+        26,
+        25,
+        26,
+        26,
+        28,
+        32,
+        39,
+        46,
+        49,
+        49,
+        48,
+        47,
+        48,
+        50,
+        53,
+        57,
+        58,
+        56,
+        52,
+        45,
+        38,
+        33,
+        30
+      ],
+      "typical": 53.1,
+      "typical_range": [
+        49.6,
+        56.5
+      ],
+      "hourly": [
+        52,
+        45,
+        45,
+        39,
+        38,
+        26,
+        22,
+        21,
+        25,
+        31,
+        29,
+        36,
+        44,
+        53,
+        50,
+        49,
+        49,
+        53,
+        51,
+        52,
+        52,
+        53,
+        55,
+        53
+      ],
+      "hourly_reference": [
+        51,
+        49,
+        43,
+        40,
+        34,
+        21,
+        21,
+        22,
+        23,
+        25,
+        26,
+        32,
+        42,
+        50,
+        50,
+        49,
+        47,
+        48,
+        49,
+        48,
+        53,
+        56,
+        55,
+        53
+      ]
+    },
+    {
+      "name": "Kerrisdale",
+      "activity": 56,
+      "change": 3,
+      "anomaly_score": 0.0,
+      "transit": 38,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Kerrisdale activity is 3% above its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 7.2
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 2.3
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.1
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        28,
+        26,
+        25,
+        26,
+        26,
+        29,
+        33,
+        39,
+        47,
+        50,
+        49,
+        48,
+        48,
+        49,
+        51,
+        54,
+        57,
+        59,
+        56,
+        53,
+        47,
+        39,
+        35,
+        31
+      ],
+      "typical": 54.2,
+      "typical_range": [
+        51.2,
+        56.6
+      ],
+      "hourly": [
+        55,
+        47,
+        44,
+        41,
+        37,
+        22,
+        21,
+        22,
+        23,
+        27,
+        29,
+        31,
+        40,
+        49,
+        47,
+        49,
+        47,
+        52,
+        49,
+        54,
+        55,
+        57,
+        58,
+        56
+      ],
+      "hourly_reference": [
+        53,
+        49,
+        44,
+        41,
+        36,
+        24,
+        23,
+        25,
+        23,
+        25,
+        27,
+        32,
+        43,
+        50,
+        52,
+        50,
+        49,
+        49,
+        50,
+        51,
+        54,
+        53,
+        57,
+        54
+      ]
+    },
+    {
+      "name": "Killarney",
+      "activity": 47,
+      "change": -2,
+      "anomaly_score": 0.0,
+      "transit": 32,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Killarney activity is 2% below its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), neighbourhood. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 4.2
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -2.1
+        },
+        {
+          "label": "Transit service",
+          "value": 0.6
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.6
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        22,
+        19,
+        19,
+        19,
+        19,
+        22,
+        26,
+        33,
+        41,
+        44,
+        43,
+        41,
+        41,
+        42,
+        45,
+        47,
+        50,
+        52,
+        50,
+        46,
+        39,
+        32,
+        28,
+        24
+      ],
+      "typical": 48.2,
+      "typical_range": [
+        46.0,
+        51.2
+      ],
+      "hourly": [
+        46,
+        40,
+        42,
+        40,
+        27,
+        13,
+        14,
+        20,
+        20,
+        17,
+        22,
+        28,
+        36,
+        44,
+        45,
+        45,
+        44,
+        42,
+        45,
+        44,
+        45,
+        46,
+        51,
+        47
+      ],
+      "hourly_reference": [
+        46,
+        43,
+        39,
+        34,
+        28,
+        15,
+        16,
+        17,
+        17,
+        18,
+        21,
+        27,
+        34,
+        43,
+        44,
+        42,
+        41,
+        43,
+        42,
+        45,
+        47,
+        49,
+        50,
+        48
+      ]
+    },
+    {
+      "name": "Kitsilano",
+      "activity": 62,
+      "change": -9,
+      "anomaly_score": 0.768,
+      "transit": 56,
+      "summary": "Outside the typical activity pattern",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Kitsilano activity is 9% below its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 12.5
+        },
+        {
+          "label": "Transit service",
+          "value": 7.8
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Event intensity",
+          "value": 2.6
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        37,
+        34,
+        33,
+        32,
+        33,
+        34,
+        39,
+        45,
+        54,
+        56,
+        56,
+        55,
+        55,
+        56,
+        57,
+        60,
+        64,
+        72,
+        73,
+        71,
+        65,
+        57,
+        54,
+        43
+      ],
+      "typical": 68.6,
+      "typical_range": [
+        64.4,
+        72.6
+      ],
+      "hourly": [
+        64,
+        50,
+        53,
+        42,
+        43,
+        30,
+        27,
+        34,
+        30,
+        32,
+        33,
+        46,
+        52,
+        59,
+        60,
+        58,
+        57,
+        56,
+        57,
+        58,
+        61,
+        60,
+        70,
+        62
+      ],
+      "hourly_reference": [
+        59,
+        56,
+        51,
+        47,
+        43,
+        30,
+        28,
+        30,
+        30,
+        32,
+        33,
+        38,
+        48,
+        57,
+        58,
+        57,
+        55,
+        56,
+        57,
+        59,
+        61,
+        61,
+        70,
+        69
+      ]
+    },
+    {
+      "name": "Marpole",
+      "activity": 47,
+      "change": -8,
+      "anomaly_score": 0.0,
+      "transit": 37,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Marpole activity is 8% below its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 4.0
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 2.0
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -1.0
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        23,
+        21,
+        20,
+        21,
+        21,
+        24,
+        28,
+        34,
+        43,
+        46,
+        45,
+        44,
+        43,
+        44,
+        46,
+        49,
+        52,
+        54,
+        53,
+        49,
+        42,
+        35,
+        30,
+        26
+      ],
+      "typical": 51.0,
+      "typical_range": [
+        47.6,
+        55.1
+      ],
+      "hourly": [
+        49,
+        44,
+        41,
+        33,
+        31,
+        18,
+        16,
+        22,
+        18,
+        18,
+        22,
+        31,
+        36,
+        44,
+        49,
+        45,
+        43,
+        44,
+        43,
+        47,
+        50,
+        50,
+        51,
+        47
+      ],
+      "hourly_reference": [
+        47,
+        46,
+        40,
+        35,
+        32,
+        18,
+        18,
+        19,
+        18,
+        21,
+        21,
+        28,
+        37,
+        45,
+        47,
+        44,
+        43,
+        45,
+        45,
+        46,
+        49,
+        50,
+        52,
+        51
+      ]
+    },
+    {
+      "name": "Mount Pleasant",
+      "activity": 95,
+      "change": 35,
+      "anomaly_score": 0.999,
+      "transit": 85,
+      "summary": "Elevated evening event activity",
+      "tags": [
+        "Events",
+        "Transit"
+      ],
+      "explanation": "Mount Pleasant activity is 35% above its training-period weekday/hour baseline. The largest model contributions are event intensity, transit service, previous activity. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Event intensity",
+          "value": 23.1
+        },
+        {
+          "label": "Transit service",
+          "value": 16.5
+        },
+        {
+          "label": "Previous activity",
+          "value": 14.8
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.8
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        40,
+        36,
+        34,
+        35,
+        36,
+        37,
+        42,
+        48,
+        56,
+        58,
+        58,
+        56,
+        57,
+        57,
+        60,
+        62,
+        66,
+        74,
+        74,
+        72,
+        66,
+        60,
+        55,
+        45
+      ],
+      "typical": 70.7,
+      "typical_range": [
+        66.3,
+        76.7
+      ],
+      "hourly": [
+        66,
+        54,
+        54,
+        47,
+        45,
+        30,
+        30,
+        34,
+        35,
+        33,
+        34,
+        40,
+        50,
+        59,
+        61,
+        62,
+        58,
+        56,
+        59,
+        61,
+        64,
+        61,
+        74,
+        95
+      ],
+      "hourly_reference": [
+        61,
+        59,
+        54,
+        51,
+        44,
+        33,
+        32,
+        31,
+        33,
+        35,
+        36,
+        43,
+        51,
+        59,
+        60,
+        58,
+        57,
+        58,
+        58,
+        60,
+        63,
+        64,
+        71,
+        71
+      ]
+    },
+    {
+      "name": "Oakridge",
+      "activity": 54,
+      "change": 3,
+      "anomaly_score": 0.0,
+      "transit": 39,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Oakridge activity is 3% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.7
+        },
+        {
+          "label": "Transit service",
+          "value": 2.7
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.5
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.1
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        25,
+        24,
+        23,
+        23,
+        24,
+        26,
+        30,
+        37,
+        44,
+        46,
+        46,
+        45,
+        45,
+        46,
+        49,
+        50,
+        54,
+        56,
+        54,
+        51,
+        44,
+        36,
+        32,
+        28
+      ],
+      "typical": 52.2,
+      "typical_range": [
+        49.8,
+        54.3
+      ],
+      "hourly": [
+        51,
+        44,
+        40,
+        35,
+        35,
+        21,
+        17,
+        22,
+        20,
+        24,
+        27,
+        27,
+        40,
+        47,
+        44,
+        45,
+        46,
+        46,
+        49,
+        49,
+        51,
+        47,
+        55,
+        54
+      ],
+      "hourly_reference": [
+        49,
+        48,
+        43,
+        37,
+        33,
+        21,
+        20,
+        20,
+        22,
+        22,
+        25,
+        30,
+        40,
+        47,
+        49,
+        46,
+        45,
+        47,
+        47,
+        48,
+        49,
+        52,
+        54,
+        52
+      ]
+    },
+    {
+      "name": "Renfrew-Collingwood",
+      "activity": 53,
+      "change": -2,
+      "anomaly_score": 0.0,
+      "transit": 38,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Renfrew-Collingwood activity is 2% below its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.5
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 2.2
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.6
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        26,
+        24,
+        23,
+        24,
+        24,
+        27,
+        32,
+        38,
+        45,
+        48,
+        47,
+        46,
+        46,
+        48,
+        50,
+        52,
+        56,
+        58,
+        55,
+        51,
+        44,
+        37,
+        32,
+        28
+      ],
+      "typical": 54.2,
+      "typical_range": [
+        50.9,
+        56.9
+      ],
+      "hourly": [
+        53,
+        47,
+        41,
+        40,
+        34,
+        20,
+        17,
+        20,
+        20,
+        20,
+        29,
+        31,
+        41,
+        47,
+        49,
+        52,
+        43,
+        48,
+        45,
+        57,
+        49,
+        52,
+        54,
+        53
+      ],
+      "hourly_reference": [
+        51,
+        47,
+        43,
+        39,
+        34,
+        24,
+        20,
+        21,
+        23,
+        23,
+        25,
+        31,
+        40,
+        48,
+        49,
+        48,
+        47,
+        46,
+        47,
+        49,
+        53,
+        54,
+        55,
+        54
+      ]
+    },
+    {
+      "name": "Riley Park",
+      "activity": 52,
+      "change": -3,
+      "anomaly_score": 0.0,
+      "transit": 36,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Riley Park activity is 3% below its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 7.2
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 1.5
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.2
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        27,
+        26,
+        25,
+        25,
+        26,
+        28,
+        32,
+        38,
+        46,
+        48,
+        49,
+        47,
+        48,
+        49,
+        51,
+        53,
+        56,
+        58,
+        56,
+        52,
+        46,
+        38,
+        34,
+        30
+      ],
+      "typical": 54.1,
+      "typical_range": [
+        51.6,
+        55.9
+      ],
+      "hourly": [
+        51,
+        48,
+        44,
+        37,
+        32,
+        24,
+        19,
+        27,
+        27,
+        23,
+        26,
+        33,
+        41,
+        52,
+        52,
+        48,
+        49,
+        43,
+        53,
+        51,
+        55,
+        55,
+        58,
+        52
+      ],
+      "hourly_reference": [
+        51,
+        50,
+        45,
+        39,
+        34,
+        23,
+        21,
+        22,
+        22,
+        23,
+        26,
+        33,
+        41,
+        49,
+        51,
+        48,
+        47,
+        48,
+        48,
+        51,
+        53,
+        55,
+        56,
+        54
+      ]
+    },
+    {
+      "name": "Shaughnessy",
+      "activity": 56,
+      "change": 1,
+      "anomaly_score": 0.0,
+      "transit": 37,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Shaughnessy activity is 1% above its training-period weekday/hour baseline. The largest model contributions are previous activity, time of day (sin), transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 7.1
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Transit service",
+          "value": 2.1
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        28,
+        27,
+        26,
+        26,
+        26,
+        28,
+        33,
+        39,
+        47,
+        50,
+        50,
+        48,
+        49,
+        49,
+        51,
+        54,
+        58,
+        59,
+        57,
+        53,
+        46,
+        39,
+        35,
+        30
+      ],
+      "typical": 55.4,
+      "typical_range": [
+        53.4,
+        57.3
+      ],
+      "hourly": [
+        55,
+        44,
+        47,
+        45,
+        39,
+        25,
+        19,
+        26,
+        22,
+        28,
+        25,
+        40,
+        41,
+        55,
+        51,
+        47,
+        48,
+        48,
+        53,
+        50,
+        53,
+        55,
+        58,
+        56
+      ],
+      "hourly_reference": [
+        54,
+        49,
+        45,
+        39,
+        35,
+        24,
+        23,
+        25,
+        24,
+        24,
+        27,
+        33,
+        42,
+        51,
+        51,
+        49,
+        49,
+        50,
+        49,
+        52,
+        53,
+        56,
+        56,
+        55
+      ]
+    },
+    {
+      "name": "South Cambie",
+      "activity": 48,
+      "change": 2,
+      "anomaly_score": 0.0,
+      "transit": 42,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "South Cambie activity is 2% above its training-period weekday/hour baseline. The largest model contributions are transit service, time of day (sin), neighbourhood. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Transit service",
+          "value": 3.5
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -2.1
+        },
+        {
+          "label": "Previous activity",
+          "value": 1.3
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        21,
+        19,
+        18,
+        19,
+        20,
+        22,
+        26,
+        32,
+        40,
+        43,
+        42,
+        41,
+        42,
+        42,
+        45,
+        47,
+        51,
+        52,
+        49,
+        45,
+        39,
+        32,
+        27,
+        24
+      ],
+      "typical": 47.1,
+      "typical_range": [
+        43.5,
+        51.4
+      ],
+      "hourly": [
+        52,
+        40,
+        41,
+        35,
+        31,
+        15,
+        7,
+        19,
+        23,
+        17,
+        23,
+        24,
+        34,
+        39,
+        44,
+        45,
+        41,
+        39,
+        43,
+        50,
+        47,
+        51,
+        45,
+        48
+      ],
+      "hourly_reference": [
+        45,
+        42,
+        37,
+        34,
+        28,
+        17,
+        16,
+        17,
+        17,
+        18,
+        20,
+        25,
+        35,
+        42,
+        44,
+        42,
+        41,
+        42,
+        43,
+        44,
+        44,
+        48,
+        49,
+        47
+      ]
+    },
+    {
+      "name": "Strathcona",
+      "activity": 52,
+      "change": 2,
+      "anomaly_score": 0.0,
+      "transit": 44,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Strathcona activity is 2% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.0
+        },
+        {
+          "label": "Transit service",
+          "value": 3.9
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -1.6
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.5
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        22,
+        20,
+        19,
+        20,
+        20,
+        23,
+        27,
+        33,
+        41,
+        44,
+        43,
+        43,
+        43,
+        44,
+        46,
+        48,
+        52,
+        54,
+        52,
+        47,
+        40,
+        33,
+        29,
+        25
+      ],
+      "typical": 50.4,
+      "typical_range": [
+        48.0,
+        52.0
+      ],
+      "hourly": [
+        49,
+        40,
+        36,
+        32,
+        32,
+        16,
+        11,
+        18,
+        15,
+        19,
+        23,
+        28,
+        35,
+        48,
+        46,
+        44,
+        42,
+        44,
+        43,
+        50,
+        47,
+        49,
+        53,
+        52
+      ],
+      "hourly_reference": [
+        48,
+        43,
+        39,
+        35,
+        29,
+        18,
+        15,
+        17,
+        18,
+        19,
+        21,
+        28,
+        35,
+        44,
+        45,
+        44,
+        42,
+        45,
+        44,
+        45,
+        47,
+        49,
+        50,
+        50
+      ]
+    },
+    {
+      "name": "Sunset",
+      "activity": 55,
+      "change": 5,
+      "anomaly_score": 0.0,
+      "transit": 40,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Sunset activity is 5% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.1
+        },
+        {
+          "label": "Transit service",
+          "value": 2.7
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -1.0
+        },
+        {
+          "label": "Event intensity",
+          "value": 0.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        23,
+        22,
+        21,
+        21,
+        21,
+        24,
+        28,
+        35,
+        42,
+        45,
+        45,
+        43,
+        43,
+        45,
+        47,
+        49,
+        52,
+        54,
+        52,
+        48,
+        41,
+        34,
+        30,
+        26
+      ],
+      "typical": 51.9,
+      "typical_range": [
+        49.0,
+        53.9
+      ],
+      "hourly": [
+        49,
+        42,
+        40,
+        37,
+        29,
+        19,
+        18,
+        21,
+        21,
+        21,
+        22,
+        32,
+        36,
+        48,
+        44,
+        47,
+        45,
+        41,
+        44,
+        47,
+        48,
+        48,
+        53,
+        55
+      ],
+      "hourly_reference": [
+        48,
+        45,
+        40,
+        36,
+        31,
+        19,
+        18,
+        19,
+        18,
+        20,
+        21,
+        28,
+        37,
+        44,
+        47,
+        44,
+        45,
+        45,
+        45,
+        45,
+        48,
+        50,
+        52,
+        52
+      ]
+    },
+    {
+      "name": "Victoria-Fraserview",
+      "activity": 52,
+      "change": 3,
+      "anomaly_score": 0.0,
+      "transit": 44,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "Victoria-Fraserview activity is 3% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 6.2
+        },
+        {
+          "label": "Transit service",
+          "value": 4.1
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Neighbourhood",
+          "value": -0.5
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.3
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        24,
+        23,
+        22,
+        22,
+        23,
+        25,
+        29,
+        36,
+        44,
+        46,
+        46,
+        44,
+        45,
+        46,
+        48,
+        50,
+        54,
+        55,
+        53,
+        49,
+        42,
+        35,
+        31,
+        27
+      ],
+      "typical": 51.0,
+      "typical_range": [
+        47.9,
+        54.8
+      ],
+      "hourly": [
+        45,
+        42,
+        37,
+        36,
+        33,
+        20,
+        17,
+        18,
+        21,
+        19,
+        22,
+        26,
+        39,
+        45,
+        49,
+        46,
+        44,
+        45,
+        48,
+        49,
+        49,
+        49,
+        56,
+        52
+      ],
+      "hourly_reference": [
+        49,
+        46,
+        41,
+        35,
+        32,
+        19,
+        19,
+        20,
+        21,
+        21,
+        23,
+        29,
+        38,
+        47,
+        47,
+        46,
+        45,
+        44,
+        46,
+        48,
+        49,
+        52,
+        52,
+        51
+      ]
+    },
+    {
+      "name": "West End",
+      "activity": 71,
+      "change": -2,
+      "anomaly_score": 0.971,
+      "transit": 50,
+      "summary": "Outside the typical activity pattern",
+      "tags": [
+        "Events",
+        "Transit"
+      ],
+      "explanation": "West End activity is 2% below its training-period weekday/hour baseline. The largest model contributions are previous activity, event intensity, transit service. This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 16.5
+        },
+        {
+          "label": "Event intensity",
+          "value": 7.0
+        },
+        {
+          "label": "Transit service",
+          "value": 5.9
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 1.3
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        40,
+        37,
+        35,
+        35,
+        36,
+        38,
+        43,
+        49,
+        56,
+        59,
+        58,
+        57,
+        57,
+        59,
+        61,
+        63,
+        67,
+        75,
+        75,
+        71,
+        65,
+        59,
+        53,
+        44
+      ],
+      "typical": 73.0,
+      "typical_range": [
+        68.8,
+        76.6
+      ],
+      "hourly": [
+        64,
+        56,
+        58,
+        47,
+        47,
+        31,
+        29,
+        31,
+        36,
+        36,
+        36,
+        45,
+        54,
+        61,
+        64,
+        60,
+        60,
+        63,
+        56,
+        67,
+        63,
+        63,
+        78,
+        71
+      ],
+      "hourly_reference": [
+        63,
+        59,
+        55,
+        51,
+        45,
+        31,
+        31,
+        35,
+        34,
+        35,
+        37,
+        43,
+        52,
+        60,
+        62,
+        60,
+        59,
+        59,
+        59,
+        60,
+        65,
+        65,
+        73,
+        73
+      ]
+    },
+    {
+      "name": "West Point Grey",
+      "activity": 55,
+      "change": 5,
+      "anomaly_score": 0.0,
+      "transit": 43,
+      "summary": "Within the usual activity range",
+      "tags": [
+        "Neighbourhood activity",
+        "Transit"
+      ],
+      "explanation": "West Point Grey activity is 5% above its training-period weekday/hour baseline. The largest model contributions are previous activity, transit service, time of day (sin). This describes associations in synthetic data, not causal effects.",
+      "drivers": [
+        {
+          "label": "Previous activity",
+          "value": 5.2
+        },
+        {
+          "label": "Transit service",
+          "value": 3.8
+        },
+        {
+          "label": "Time of day (sin)",
+          "value": 2.7
+        },
+        {
+          "label": "Event intensity",
+          "value": -0.6
+        },
+        {
+          "label": "Neighbourhood",
+          "value": 0.6
+        },
+        {
+          "label": "Precipitation",
+          "value": 0.5
+        },
+        {
+          "label": "Temperature",
+          "value": 0.0
+        },
+        {
+          "label": "Wind",
+          "value": 0.0
+        },
+        {
+          "label": "Time of day (cos)",
+          "value": -0.0
+        },
+        {
+          "label": "Weekend",
+          "value": 0.0
+        }
+      ],
+      "intercept": 42.188,
+      "forecast": [
+        26,
+        24,
+        23,
+        24,
+        25,
+        27,
+        32,
+        38,
+        45,
+        48,
+        47,
+        46,
+        47,
+        48,
+        50,
+        52,
+        55,
+        57,
+        55,
+        51,
+        45,
+        37,
+        33,
+        29
+      ],
+      "typical": 52.3,
+      "typical_range": [
+        50.5,
+        53.9
+      ],
+      "hourly": [
+        54,
+        43,
+        45,
+        38,
+        34,
+        23,
+        22,
+        21,
+        24,
+        27,
+        27,
+        35,
+        43,
+        53,
+        50,
+        47,
+        49,
+        46,
+        51,
+        53,
+        52,
+        51,
+        53,
+        55
+      ],
+      "hourly_reference": [
+        50,
+        47,
+        43,
+        39,
+        33,
+        22,
+        21,
+        22,
+        23,
+        23,
+        25,
+        31,
+        40,
+        49,
+        50,
+        47,
+        47,
+        49,
+        48,
+        49,
+        52,
+        54,
+        54,
+        52
+      ]
+    }
+  ],
+  "hourly": [
+    54,
+    46,
+    45,
+    40,
+    37,
+    23,
+    20,
+    24,
+    24,
+    25,
+    27,
+    34,
+    42,
+    51,
+    51,
+    50,
+    49,
+    49,
+    50,
+    53,
+    53,
+    54,
+    59,
+    61
+  ],
+  "baseline": [
+    23,
+    22,
+    23,
+    24,
+    25,
+    27,
+    33,
+    42,
+    50,
+    51,
+    49,
+    48,
+    49,
+    50,
+    51,
+    53,
+    55,
+    58,
+    57,
+    54,
+    51,
+    47,
+    42,
+    36
+  ],
+  "forecast": [
+    28,
+    26,
+    25,
+    26,
+    26,
+    28,
+    33,
+    39,
+    47,
+    50,
+    49,
+    48,
+    48,
+    49,
+    51,
+    53,
+    57,
+    60,
+    59,
+    55,
+    49,
+    42,
+    37,
+    32
+  ],
+  "metrics": {
+    "mae": 2.365,
+    "rmse": 3.05,
+    "baseline_mae": 2.196,
+    "model": "Standardized Ridge regression",
+    "train_rows": 43802,
+    "test_rows": 3696,
+    "train_end": "2026-09-05 01:00:00",
+    "provenance": "synthetic unless a supplied-data run is explicitly requested",
+    "train_start": "2026-06-14 02:00:00",
+    "model_version": "ridge-demo-v1",
+    "trained_at": "2026-09-12T06:45:35.717482+00:00",
+    "validation": "Last seven days by timestamp; preprocessing fit on training data only; one-step conditional predictions."
+  },
+  "state": "Friday evening upswing",
+  "cluster_id": 2,
+  "state_description": "The nearest learned city-state cluster combines elevated transit service and evening activity.",
+  "explanation_method": "Exact additive Ridge contributions relative to training means (before 0\u2013100 clipping)",
+  "similar": [
+    {
+      "label": "Friday, July 24 \u00b7 19:00",
+      "description": "Activity 55/100 \u00b7 19\u00b0C \u00b7 event intensity 0.19",
+      "similarity": 99.4
+    },
+    {
+      "label": "Saturday, June 27 \u00b7 19:00",
+      "description": "Activity 56/100 \u00b7 20\u00b0C \u00b7 event intensity 0.19",
+      "similarity": 99.3
+    },
+    {
+      "label": "Saturday, August 22 \u00b7 19:00",
+      "description": "Activity 55/100 \u00b7 20\u00b0C \u00b7 event intensity 0.18",
+      "similarity": 99.3
+    },
+    {
+      "label": "Saturday, July 25 \u00b7 19:00",
+      "description": "Activity 54/100 \u00b7 20\u00b0C \u00b7 event intensity 0.19",
+      "similarity": 99.2
+    },
+    {
+      "label": "Saturday, August 29 \u00b7 19:00",
+      "description": "Activity 55/100 \u00b7 18\u00b0C \u00b7 event intensity 0.18",
+      "similarity": 98.8
+    }
+  ],
+  "rhythm_baseline": [
+    54,
+    51,
+    47,
+    42,
+    36,
+    23,
+    22,
+    23,
+    24,
+    25,
+    27,
+    33,
+    42,
+    50,
+    51,
+    49,
+    48,
+    49,
+    50,
+    51,
+    53,
+    55,
+    58,
+    57
+  ]
+}

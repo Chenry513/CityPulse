@@ -1,0 +1,8 @@
+name: citypulse
+version: '1.0.0'
+config-version: 2
+profile: citypulse
+model-paths: [models]
+models:
+  citypulse:
+    +materialized: table
